@@ -1,0 +1,5 @@
+com\ccfish\springcloud\controller\DeptController.class
+com\ccfish\springcloud\service\impl\DeptServiceImpl.class
+com\ccfish\springcloud\dao\DeptDao.class
+com\ccfish\springcloud\DeptProvider8003_App.class
+com\ccfish\springcloud\service\DeptService.class

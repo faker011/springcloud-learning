@@ -1,0 +1,29 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: gateway9527.com
+    prefer-ip-address: true
+    
+
+zuul: 
+  #prefix: /ccfish 统一前缀，所有的微服务之前都要加上这个路径
+  routes:
+    mydept: 
+      service-id: microservicecloud-dept #将服务映射到下面的path
+      path: /mydept/**
+  ignored-services: microservicecloud-dept #关闭通过服务直接访问的入口
+
+info:
+  app.name: ccfish-microcloud
+  company.name: www.qqhapi.com
+  build.artifactId: $project.artifactId$ #pom中build配置，读取pom内容
+  build.version: $project.version$
+    

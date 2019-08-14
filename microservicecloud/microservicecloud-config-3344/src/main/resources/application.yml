@@ -1,0 +1,11 @@
+server: 
+  port: 3344
+spring:
+  application:
+    name: microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          # uri: git@github.com:faker011/microservicecloud-config.git 会出现Cannot clone or checkout repository
+          uri: https://github.com/faker011/microservicecloud-config.git # github上面的仓库

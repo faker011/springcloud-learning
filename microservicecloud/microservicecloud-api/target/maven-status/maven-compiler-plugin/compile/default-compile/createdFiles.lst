@@ -1,0 +1,4 @@
+com\ccfish\springcloud\service\DeptClientService.class
+com\ccfish\springcloud\service\DeptClientServiceFallBackFactory.class
+com\ccfish\springcloud\entity\Dept.class
+com\ccfish\springcloud\service\DeptClientServiceFallBackFactory$1.class
