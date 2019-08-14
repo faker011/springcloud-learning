@@ -1,0 +1,17 @@
+SPRINGCLOUD学习Demo
+API-通用接口模块
+config-3344 springcloud config server
+config-client-3355 config客户端测试（1）
+config-dept-client-8001 config客户端，读取配置注册服务
+config-eureka-client-7001 config客户端，注册中心
+consumer-dept-80 服务消费者
+consumer-dept-feign 服务消费者，通过API模块中配置的feign接口来实现服务消费，使用hystrix
+comsumer-hystrix-dashboard hystrix监控器，通过对应服务/hystrix.stream进行服务监控
+eureka-7001 注册中心集群1
+eureka-7002 注册中心集群2
+eureka-7003 注册中心集群3
+provider-dept-8001 服务提供者集群1
+provider-dept-8002 服务提供者集群2
+provider-dept-8004 服务提供者集群3
+provider-dept-hystrix-8001 服务提供者，使用hystrix进行服务熔断
+zull-gateway-9527 路由中心
